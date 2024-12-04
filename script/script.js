@@ -1,11 +1,11 @@
 const inputBaseNumber = document.getElementById('basenumber')
 const convertButtom = document.getElementById('convertbutton')
 const result = document.getElementById('feedback')
-//const restartButtom = document.getElementById('restartbutton')
+// const restartButtom = document.getElementById('restartbutton')
 
 const baseInput = document.getElementById('base')
 
-//funtion
+// funtion
 
 convertButtom.addEventListener('click', () => {
   const convertBase = parseInt(inputBaseNumber.value, 10)
@@ -14,7 +14,7 @@ convertButtom.addEventListener('click', () => {
     result.textContent = 'please enter a valid base number'
     result.style.color = 'red'
     return
-  } 
+  }
   const convertNumber = convertBase.toString(baseInputNumber)
 
   result.textContent = ` ${convertBase} to base ${baseInputNumber} is ${convertNumber}`
